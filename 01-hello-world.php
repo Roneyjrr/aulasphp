@@ -9,12 +9,15 @@
     <h1>Experiências com PHP</h1>
     <hr>
 
+    <!-- Delimitador de abertura -->
     <?php
-    echo "Olá";
-    echo "<p>Programador Web - Senac Penha</p>";
-    echo "<p style='color:red'>Programador Web - Senac Penha</p>";
-
+    echo "Olá!";
+    echo "<p>Programador Web</p>";
+    echo "<p style='color:red'>Senac Penha</p>";
+    echo "<p style=\"color:red\">Senac Penha</p>";
     ?>
+    <!-- Delimitador de fechamento -->
 
+    
 </body>
 </html>
