@@ -15,14 +15,18 @@
         <h1>Comandos condicionais no PHP</h1>
         <hr>
         <h2>Condicional SIMPLES</h2>
+
         <?php
         $numero = 500;
         if ($numero >= 100) {
         ?>
+
             <p>O valor da variável é <?= $numero ?></p>
+
         <?php
         }
         ?>
+
         <hr>
         <h2>Condicinal COMPOSTA</h2>
         <?php
@@ -36,14 +40,21 @@
         <p><b>Estoque:</b> <?= $qtdEmEstoque ?></p>
 
         <?php
-        // Se a Quantidade em estoque for menor que a crítica o sistema deve avisar e pedir pra repor.
+            // Se a Quantidade em estoque for menor que a crítica o sistema deve avisar e pedir pra repor.
         if ($qtdEmEstoque < $qtdCritica) {
-            echo "<p class='alert alert-danger'>É necessário repor.</p>";
-        } else {
-            // Caso contrário simplismente avisar que o estoque está normal
-            echo "<p class='alert alert-success'>Estoque normal.</p>";
-        }
+        ?>
 
+            <p class='alert alert-danger'>É necessário repor.</p>
+
+        <?php
+        } else {
+        ?>
+
+            <!--  Caso contrário simplismente avisar que o estoque está normal -->
+            <p class='alert alert-success'>Estoque normal.</p>
+
+        <?php
+        }
         ?>
 
         <hr>
@@ -59,9 +70,11 @@
             $garantia = 1;
         }
         ?>
+
         <p><?= $produto ?> tem garantia de <b><?= $garantia ?> anos.</b></p>
         <hr>
         <h2>Condicinal ENCADEADA usando Swith/Case</h2>
+        
         <?php
         switch ($produto) {
             case "Ultrabook":
