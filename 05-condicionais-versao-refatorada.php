@@ -94,6 +94,7 @@
         <p>Garantia de <?= $garantiaB ?> anos</p>
 
     </div>
+    <?php include "redes-sociais.html" ?>
 </body>
 
 </html>
